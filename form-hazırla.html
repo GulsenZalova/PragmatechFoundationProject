@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Qeydiyyat Formu</title>
+</head>
+<body>
+    <form action="/Home/Register">
+    <h1>Qeydiyyatdan keç</h1>
+    <hr>
+    <h3>Şəxsi Məlumatlar</h3>
+ <p> Ad:
+    <input type="Ad" name="Ad" placeholder="adınızı yazın" required> <br> </p> 
+ <p></p> Soyad:
+    <input type="Soyad" name="Soyad" placeholder="soyadınızı yazın" required> <br> </p>
+ <p> Doğum tarixi: 
+    <input type="Date" name="Doğum tarixi">  <br> </p>
+<p> Qadın<input type="radio" name="cinsiyyət" value="Qadın">
+Kişi<input type="radio" name="cinsiyyət" value="Kişi">  </p>
+<h3>Hesab Məlumatları</h3>
+<hr>
+<p> Mail: <input type="Mail" name="mail" placeholder="mail adresinizi yazın" required> <br> </p>
+<p></p> Şifrə: <input type="Şifrə" name="şifrə" placeholder="şifrənizi yazın" readonly> <br> </p>
+<p><label for="username"> Username</label> <br>
+<input type="text" id="username" name="username"> <br></p>
+<p><label for="password"> Password</label><br>
+ <input type="password" id="pasword" name="password"></p>
+
+
+<p></p>    Şəhər:
+<select>
+    <option>Bakı</option>
+    <option>Gəncə</option>
+    <option>Mingəçevir</option>
+    <option>Sumqayıt</option>
+</select> <br> </p> 
+
+ <p> <input type="file" name="Cv yüklə"></p>
+
+  Məni xatırla: <input type="checkbox">
+
+<p></p> <input type="submit" value="Təsdiq et">
+
+<input type="reset" value="Ləğv et"> </p>
+</form>
+</body>
+</html>
