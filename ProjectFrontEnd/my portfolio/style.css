@@ -101,7 +101,7 @@ html {
   box-sizing: border-box;
   background-color: #222;
   width: 1200px;
-  height: 1000px;
+  height: 1200px;
   margin: 0px auto;
   margin-right: 0px;
   margin-top: 50px;
@@ -222,7 +222,6 @@ color: #fff;
 color: #fff;
 }
 .Servic-2{
-
 width: 400px;
 height: 145px;
 }
@@ -329,12 +328,12 @@ color: #ff724c;
   background-color: #222;
   width: 1200px;
   height: 800px;
-  margin: 0px auto;
   margin-right: 0px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 250px;
 }
 
 .Top{
@@ -483,6 +482,7 @@ height: 100px;
   margin: 0px auto;
   margin-right: 0px;
   margin-top: 50px;
+  margin-left: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
