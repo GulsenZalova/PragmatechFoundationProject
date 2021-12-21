@@ -1,0 +1,157 @@
+.promotion-page{
+    
+}
+
+.promotion-page-container{
+    box-sizing: border-box;
+    background-image:url(https://image.freepik.com/free-photo/front-view-young-attractive-female-white-t-shirt-smiling-holding-grey-file-pink-wall-model-color-female-young_140725-37891.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-heading-1{
+ border: 2px solid palevioletred;
+ width: 700px;
+background-color: rgb(253, 239, 239);
+}
+
+.container-heading-2{
+border: 2px solid palevioletred;
+width: 700px;
+background-color: rgb(253, 239, 239);
+}
+
+.container-heading-3{
+border: 0px solid palevioletred;
+width: 200px;
+margin-left: 100px;
+margin-top: 30px;
+}
+
+.container-heading-4{
+border: 0px solid palevioletred;
+width: 300px;
+margin-left:100px ;
+
+
+}
+
+.basic{
+border: 1px solid grey;
+width: 500px;
+height: 300px;
+display: flex;
+justify-content:space-between;
+background-color: white;
+margin-left: 200px;
+
+}
+
+.img{
+ border: 2px ;
+ width: 200px;
+display: flex;
+}
+.basic-content{
+    margin-top: 110px;
+    margin-right: 90px ;
+}
+.part-1{
+border: 0px;
+width: 200px;
+margin: top 50px;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+}
+.part-2{
+border: 1px;
+width: 200px;
+display: flex;
+
+}
+
+.view{
+ border: 1px;
+ width: 100px;
+ display: flex;
+
+}
+
+.form{
+border: 0px solid plum;
+width: 500px;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+margin-left: 200px;
+margin: top 30px;px;
+
+}
+
+.mail{
+border: 0px solid plum;
+width: 160px;
+height: 30px;
+
+}
+
+.sign{
+border: 0px solid plum;
+width: 120px;
+height: 30px;
+}
+
+.log-in {
+border: 0px solid plum;
+width: 160px;
+height: 30;
+}
+
+.sosial-media{
+border: 0px solid plum;
+width: 170px;
+display: flex;
+justify-content: space-between;
+align-content:space-between ;
+align align-items: baseline;
+padding: 15px;
+
+
+}
+.media{
+border: 1px solid ;
+background-color: black;
+padding: 3px;
+color: white;
+display: flex;
+justify-content: flex-end;
+}
+.info{
+border: 1px solid;
+background-color:black;
+color: white;
+padding: 5px ;
+}
+.icon{
+    border: 1px solid plum;
+    width: 100px;
+    display: flex;
+}
+
+
+.navigation{
+    border: 0px solid plum;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-left:50px ;
+    padding: top 150px; ;
+    margin-top: 40px;
+}
+

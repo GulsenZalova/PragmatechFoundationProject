@@ -1,0 +1,55 @@
+/* Reset styles*/
+body{
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+ 
+
+}
+
+#main{
+border: 1px solid red;
+height: 700px;
+position: relative;
+}
+
+.main-nav{
+border: 1px solid green;
+width: 170px;
+height: inherit;
+position: fixed;
+background-color: #222222 ;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: auto;
+
+
+}
+
+.main-page{
+  border: 1px solid blue;  
+  width: 1200px;
+  margin: 0px auto;
+  height: inherit;
+  background-image: url(https://lmpixels.com/demo/unique/unique-vcard/images/main_bg_light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.main-page div {
+    border: 1px solid salmon;
+    margin: 0px auto ;
+ 
+}
