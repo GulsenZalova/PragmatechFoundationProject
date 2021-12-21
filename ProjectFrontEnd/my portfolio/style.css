@@ -3,6 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Container Section Start */
 .sidebar {
   height: 100vh;
