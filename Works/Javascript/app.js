@@ -87,4 +87,3 @@ console.log(String(8))
 console.log(Boolean(1))
 console.log(Number("salam"))
 
-
