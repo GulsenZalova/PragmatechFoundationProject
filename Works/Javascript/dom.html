@@ -1,0 +1,78 @@
+<!-- Query selector nümunə 1 -->
+<!DOCTYPE html> 
+<html>
+<head></head>
+<body>
+<div id="box">
+<h2 class="box-item">Bu bir h1 teqidir</h2>
+<p class="box=item" >Bu bir paraqraf teqidir</p>
+</div>
+<button onclick="myFunction()">Kliklə</button>
+<script>
+function myFunction(){
+let x=document.getElementById("box")
+x.querySelector(".box-item").innerHTML="Salam Necəsən?"
+}
+</script>
+</body>
+</html>
+
+<!-- Query selector nümunə 2 -->
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<div id="Tags">
+  <p>This is a p element in div.</p>
+  <p>This is also a p element in div.</p>
+</div>
+<button onclick="myFunction()">Kliklə</button>
+<script>
+function myFunction(){
+let x=document.getElementById("Tags");
+x.querySelector("p").innerHTML="Salam"
+}
+</script>
+</body>
+</html>
+
+<!-- Query selector nümunə 3 -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="Tags">
+<h2>Bu h2 teqidir</h2>
+<h3>Bu h3 teqidir</h3>
+</div>
+<button onclick="myFunction()">Kliklə</button>
+<script>
+function myFunction(){
+let x=document.getElementById("Tags");
+x.querySelector("h2,h3").style.backgroundColor="red"
+}
+</script>
+</body>
+</html>
+
+<!-- Query selector nümunə 4 -->
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+   <div id="Elements">
+       <a href="https://www.w3schools.com">w3schools</a>
+       <a href="http://www.disney.com" target="_blank" >disney</a>
+       <a href="http://www.wikipedia.org" target="_blank" >wikipedia</a>
+   </div> 
+   <button onclick="myFunction()">Click Me</button>
+<script>
+function myFunction(){
+let x=document.getElementById("Elements");
+x.querySelector("a[target]").style.border="10px solid red"
+}
+
+</script>
+</body>
+</html>

@@ -6,3 +6,7 @@ function tekrarla(){
         tekrarla()
     } 
 } tekrarla()
+
+
+
+
