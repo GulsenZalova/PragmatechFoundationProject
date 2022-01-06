@@ -1,5 +1,5 @@
 <!-- Query selector nümunə 1 -->
-<!DOCTYPE html> 
+<!-- <!DOCTYPE html> 
 <html>
 <head></head>
 <body>
@@ -15,10 +15,10 @@ x.querySelector(".box-item").innerHTML="Salam Necəsən?"
 }
 </script>
 </body>
-</html>
+</html> -->
 
 <!-- Query selector nümunə 2 -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head></head>
 <body>
@@ -34,10 +34,10 @@ x.querySelector("p").innerHTML="Salam"
 }
 </script>
 </body>
-</html>
+</html> -->
 
 <!-- Query selector nümunə 3 -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 </head>
@@ -54,10 +54,10 @@ x.querySelector("h2,h3").style.backgroundColor="red"
 }
 </script>
 </body>
-</html>
+</html> -->
 
 <!-- Query selector nümunə 4 -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head></head>
 <body>
@@ -75,4 +75,54 @@ x.querySelector("a[target]").style.border="10px solid red"
 
 </script>
 </body>
-</html>
+</html> -->
+
+<!-- querySelectorAll nümunə 1 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1 class="yazi">Lorem.</h1>
+    <h2 class="yazi">Lorem, ipsum dolor.</h2>
+    <h3 class="yazi">Lorem ipsum dolor sit amet.</h3>
+    <p class="yazi">Lorem ipsum dolor sit amet consectetur.</p>
+  
+    <button onclick="myFunction()">Click Me</button>
+
+    <script>
+    function myFunction(){
+        let x,i;
+        x=document.querySelectorAll(".yazi");
+        for(i=0;i<x.length; i++){
+            x[i].style.backgroundColor="red"
+        }
+
+    }
+    </script>
+</body>
+</html> --> -->
+
+<!-- querySelectorAll nümunə 2 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <P class="paraghap">Lorem ipsum dolor sit amet.</P>
+    <P class="paraghap">Lorem ipsum dolor sit amet.</P>
+    <P class="paraghap">Lorem ipsum dolor sit amet.</P>
+    <P class="paraghap">Lorem ipsum dolor sit amet.</P>
+    <P class="paraghap">Lorem ipsum dolor sit amet.</P>
+
+<button onclick="myFunction()">Click Me</button>
+<script>
+function myFunction(){
+let x;
+x=document.querySelectorAll(".paraghap");
+x[3].style.border="10px solid yellow "
+}
+</script>
+</body>
+</html> -->
+
