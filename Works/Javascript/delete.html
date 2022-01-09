@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+  padding:0px;
+  margin:40px;
+  list-style:none
+}
+li{
+  padding:10px 20px;
+  border:1px solid gray;
+  border-bottom:none;
+  transition:all .5s ease;
+}
+li:last-child{
+   border-bottom:1px solid gray;
+  border-radius:0px 0px 10px 10px;
+}
+li:first-child{
+
+  border-radius:10px 10px 0px 0px;
+}
+li:hover{
+  background:lightgray
+}
+    </style>
+
+</head>
+<body id="myList">
+    <ul>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 01</li>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 02</li>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 03</li>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 04</li>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 05</li>
+        <li onclick="myFuntion()">Lorem ipsum dolor sit amet 06</li>
+      </ul>
+
+<script>
+function myFuntion(){
+for(var i=0; i<6; i++){
+    var list=document.getElementById("myList");
+    list.removeChild(list.childNodes[i])
+
+}
+}
+ 
+</script>
+
+</body>
+</html>
+
+
