@@ -14,9 +14,57 @@
 margin: 0px;
 padding: 0px;
 font-family: 'Open Sans Condensed', sans-serif;
+}
+.accordion{
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 100%;
+justify-content: center;
+align-items: center;
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
+h1{
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.sual{
+color: black;
+width: 50%;
+padding: 10px;
+text-align: left;
+display: flex;
+justify-content: space-between;
+font-size: 24px;
+border-radius: 5px;
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cavab{
+ width: calc(50%-40px);
+ padding: 0px 20px ;
+ max-height: 0px ;
+ overflow: hidden;
+ transition: all .5s;
+}
+.cavab p{
+    padding: 20px;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+button:hover, button .aktif{
+background-color: cornflowerblue;
+cursor: pointer;
+}
 </style>
 
 </head>
@@ -24,24 +72,39 @@ font-family: 'Open Sans Condensed', sans-serif;
 <div class="accordion">
 <h1>Ən çox verilən suallar</h1>
 <button class="sual">
-    <span>Step1</span>
+    <span>Web proqramlaşdırma nədir?</span>
     <i class="fas fa-arrow-alt-circle-down"></i>
 </button>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, a.</p>
+<div class="cavab"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatum.</p></div>
 
 <button class="sual">
-    <span>Step2</span>
+    <span>Web proqramlaşdırmanın hansı istiqamətləri vardır?</span>
     <i class="fas fa-arrow-alt-circle-down"></i>
 </button>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, a.</p>
+<div class="cavab"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, a.</p></div>
 
 <button class="sual">
-    <span>Step3</span>
+    <span>Frontend proqramlaşdırma üçün hansı texnoıogiyaları bilmək lazımdır?</span>
     <i class="fas fa-arrow-alt-circle-down"></i>
 </button>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, a.</p>
+<div class="cavab"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, a.</p></div>
 
 </div>
-    <script></script>
+    <script>
+var question=document.getElementsByClassName("sual");
+var ox=document.getElementsByClassName("fa-arrow-alt-circle-down")
+for(let i=0; i<question.length; i++){
+    question[i].onclick=function(){
+         let panel=this.nextElementSibling;
+         this.lastElementChild.classList.toggle("fa-arrow-alt-circle-up")
+       if(panel.style.maxHeight){
+        panel.style.maxHeight=null
+       }else panel.style.maxHeight=panel.scrollHeight + "px"
+
+    }
+
+}
+
+    </script>
 </body>
 </html>
