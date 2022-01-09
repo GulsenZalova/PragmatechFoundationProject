@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button onclick="myFunction()">Click Me</button> 
+ 
+ <script>
+     function myFunction(){
+        for(var i=1; i<7; i++){
+            var list=document.createElement("li");
+            var text=document.createTextNode("Lorem ipsum dolor sit amet" + " " + "0"+ i);
+            list.appendChild(text)
+            document.body.appendChild(list)
+        }
+     }
+ </script>
+</body>
+</html>
