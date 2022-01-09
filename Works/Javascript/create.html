@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<style>
+button{
+  padding:10px 20px;
+}
+.box{
+  width:400px;
+  height:300px;
+  background:red;
+}
+</style>
+<body>
+<button onclick="myFunction()"> Create New Element</button>
+<script>
+function myFunction(){
+var create=document.createElement("DIV");
+create.className="box";
+document.body.appendChild(create)
+
+
+}
+</script>
+</body>
+</html>
