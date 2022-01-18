@@ -1,0 +1,5 @@
+1.Yeni istifadeci daxil et
+2.İstifadecileri goster
+3.İd-ye gore istifadeci daxil et
+4.ana mennyuya qayit
+5.proqramdan cix
