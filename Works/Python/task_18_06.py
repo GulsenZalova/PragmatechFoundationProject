@@ -1,3 +1,3 @@
 arr=['Samir','Mehemmed','Qurbani','Vesile','Qurbaneli','Memmedaga','Nurlan','Leman','Emil','Gulshen']
-arr+=arr.copy()
-print(arr)
+for x in arr:
+    print("m" in x)
