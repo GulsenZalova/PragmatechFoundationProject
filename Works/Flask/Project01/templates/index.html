@@ -150,39 +150,28 @@
 
           {% for index in allskil %}
           <div class="Skil">
-            <div><img src={{index.im}}></div>
+            <div><img src={{index.img}}></div>
             <div><h1>{{index.title}}</h1></div>
           </div>
-          {% endfor %}
-             
+          {% endfor %}    
         </div>
         </div>
+
         <div class="Testimonial">
           <div class="Testimonial-header"><h1>Testimonials</h1></div>
-        <div class="Testimonials">
-          <div>
-            <div><i><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nesciunt repudiandae alias magnam saepe eligendi repellendus."</p></i></div>
-            <div class="Testimonials-items">
-              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_1.jpg" alt=""></div>
-              <div><span>Aytac Hüseynova</span></div>
-            </div>
+       {% for index in alltestimonial %}
+       <div class="Testimonials">
+        <div>
+          <div><i><p>{{index.info}}</p></i></div>
+          <div class="Testimonials-items">
+            <div><img src="{{index.img}}" alt=""></div>
+            <div><span>{{index.ad}}</span></div>
           </div>
-          <div>
-            <div><i><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> At, adipisci vel! Magnam sapiente dolor illum!"</p></i></div>
-            <div class="Testimonials-items">
-              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_2.jpg" alt=""></div>
-              <div><span>Nurlan Cahangirov</span></div>
-            </div>
+        </div>
+       {% endfor %}
           </div>
-          <div>
-            <div><i></i><p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Facilis impedit pariatur sunt maiores explicabo sapiente."</p></i></div>
-            <div class="Testimonials-items">
-              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_3.jpg" alt=""></div>
-              <div><span>Vüqar Cümşüdlü</span></div>
-            </div>
-          </div>
-          </div>
-          </div>    
+          </div>  
+           
         <div class="Fun-Fact">
           <div class="Fun-Fact-header"><h1>Fun-Facts</h1></div>
           <div class="Fun-Facts"> 
@@ -305,27 +294,15 @@
    <div><H1>Blog</H1></div>
     <div class="blog-best"><span>My blogs</span></div>
   </div>
-      <div class="content">
-    <div class="content-item">
-      <a href="">
-        <img src="https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=4:3,smart&width=1200&dpr=2">
-      </a>
-    <h1>Web proqramlaşdırma nədir?</h1> 
-      <h5>16.01.2022</h5>
-    </div>
-    <div class="content-item">
-      <a href="">
-        <img src="https://resources.workable.com/wp-content/uploads/2019/07/temp_remote_work-01.png">
-      </a>
-      <h1>Remote iş modeli haqqında məlumat</h1>
-      <h5>16.01.2022</h5>
-    </div>
-    <div class="content-item">
-      <a href="">
-        <img src="https://res.cloudinary.com/gurucom/images/w_770,h_515,c_fill,g_auto/dpr_2/dpr_2/f_auto,q_auto/v1630998719/wordpress/blog/average-cost-of-a-freelance-web-developer/average-cost-of-a-freelance-web-developer-770x515.jpg?_i=AA">
-      </a>
-      <h1>Freelance işləməyin 5 ən böyük üstün cəhəti</h1>
-      <h5>16.01.2022</h5>
+  <div class="content">
+     {% for index in allblog %}
+      <div class="content-item">
+        <a href="">
+          <img src="{{index.img}}">
+        </a>
+         <h1>{{index.title}}</h1> 
+        <h5>{{index.date}}</h5>
+     {% endfor %}
     </div>
   </div>
 </section>
