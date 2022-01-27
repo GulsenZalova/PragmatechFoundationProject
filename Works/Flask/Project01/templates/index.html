@@ -11,7 +11,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="../static/style.css" />
   </head>
   <body>
     <!-- Container Section Start -->
@@ -147,22 +147,14 @@
         <div class="Skils">
           <div class="Skils-header"><h1>Skils</h1></div>
           <div class="Skils-item">
+
+          {% for index in allskil %}
           <div class="Skil">
-            <div><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"></div>
-            <div><h1>HTML</h1></div>
+            <div><img src={{index.im}}></div>
+            <div><h1>{{index.title}}</h1></div>
           </div>
-          <div class="Skil"> 
-            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png"></div>
-            <div><h1>CSS</h1></div>
-          </div>
-          <div class="Skil">
-            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"></div>
-            <div><h1>Javacsript</h1></div>
-          </div>
-          <div class="Skil">
-            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"></div>
-            <div><h1>Bootstrap</h1></div>
-          </div>     
+          {% endfor %}
+             
         </div>
         </div>
         <div class="Testimonial">
