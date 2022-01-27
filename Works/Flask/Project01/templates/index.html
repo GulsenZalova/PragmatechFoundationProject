@@ -1,28 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .body{
-          display: grid; 
-          grid-template-columns: repeat(3, 1fr); 
-          gap: 30px;
-        }
-        .Job{
-            color: black;
-            border: 1px solid red;
-        }
-    </style>
-</head>
-<body>
-    {%for i in data%}
-    <div class="Job">
-        <h1>{{i['Vəzifə']}}</h1>
-        <h3>{{i['Maaş']}}</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <!-- Container Section Start -->
+    <div id="home">
+      <section id="container">
+        <div class="sidebar">
+          <div class="sidebar-title">
+            <div class="image">
+              <img
+                src="https://lmpixels.com/demo/unique/unique-vcard/images/photo.png"
+                alt=""
+              />
+            </div>
+            <div class="header">Gülşən Zalova</div>
+          </div>
+          <div class="sidebar-item">
+            <ul>
+              <li>
+                <a href="#home">
+                  <div><i class="fas fa-home"></i></div>
+                  <h1>Home</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#About-Me">
+                  <div><i class="fas fa-user"></i></div>
+                  <h1>About Me</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#Resume">
+                  <div><i class="far fa-folder-open"></i></div>
+                  <h1>Resume</h1>
+                </a>
+              </li>
+                <li>
+                <a href="#Portfolio">
+                  <div><i class="fas fa-briefcase"></i></div>
+                  <h1>Portfolio</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#Blog">
+                  <div><i class="fas fa-blog"></i></div>
+                  <h1>Blog</h1>
+                </a>
+              </li>
+          
+              <li>
+                <a href="#Contact">
+                  <div><i class="far fa-envelope"></i></div>
+                  <h1>Contact</h1>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="background">
+          <div class="background-title">
+            <h1>Gülşən Zalova</h1>
+            <div class="wrapper">
+              <ul class="dynamic-txts">
+                <li><span> Frontend-developer</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    {%endfor%}
-</body>
+    <!-- Container Section End -->
+  <div class="app">
+    <!-- About Me Section Start -->
+    <section id="About-Me">
+      <!-- About Me Part-1  Section Start -->
+      <section class="Part-1">
+        <div class="Header">
+          <div><h1>About Me</h1></div>
+          <div class="myheader"><span>Artist, Thinker, Creative Doer</span></div>
+        </div>
+        <div class="Main">
+          <div class="foto">
+            <img
+              src="https://lmpixels.com/demo/unique/unique-vcard/images/photo.png"
+              alt=""
+            />
+          </div>
+          <div class="paragraph">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              distinctio aliquam doloremque deserunt! Odio, voluptate eius?
+              Expedita ipsa cumque ut culpa alias sint incidunt illum deserunt
+              harum. Numquam labore impedit deserunt, eligendi minima
+              necessitatibus quo pariatur unde! Option. <br>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis quaerat temporibus nostrum tempora laboriosam magnam quas fuga consectetur necessitatibus!
+            </p>
+          </div>
+          <div class="info">
+            <div class="rows">
+            <ul>
+              <li><a href="Age">Yaş:</a><span>25</span></li>
+              <li>
+                <a href="Residence">Yaşayış yeri:</a><span>Azərbaycan</span>
+              </li>
+              <li><a href="Adress"> Ünvan:</a><span>Bakı Şəhəri</span></li>
+              <li>
+                <a href="e-mail">Mail:</a><span>zalova0202@gmail.com</span>
+              </li>
+              <li>
+                <a href="Phone">Telefon Nömrəsi:</a><span>0505388925</span>
+              </li>
+              <li><a href="Freelance">Freelance:</a><span>Mövcuddur</span></li>
+            </ul>
+            </div>
+            <div class="social-media">
+            <ul>
+              <li><a href="Twiter"></a><i class="fab fa-twitter"></i></li>
+              <li><a href="Facebook"></a><i class="fab fa-facebook-f"></i></li>
+              <li>
+                <a href="Google+"></a><i class="fab fa-google-plus-g"></i>
+              </li>
+              <li><a href="Youtube"></a><i class="fab fa-youtube"></i></li>
+              <li><a href="Instagram"></a><i class="fab fa-instagram"></i></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Me Part-1 Section End -->
+      <!-- About Me Part-2 Section Start -->
+      <section id="Part-2">
+        
+        <div class="Skils">
+          <div class="Skils-header"><h1>Skils</h1></div>
+          <div class="Skils-item">
+          <div class="Skil">
+            <div><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"></div>
+            <div><h1>HTML</h1></div>
+          </div>
+          <div class="Skil"> 
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png"></div>
+            <div><h1>CSS</h1></div>
+          </div>
+          <div class="Skil">
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"></div>
+            <div><h1>Javacsript</h1></div>
+          </div>
+          <div class="Skil">
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"></div>
+            <div><h1>Bootstrap</h1></div>
+          </div>     
+        </div>
+        </div>
+        <div class="Testimonial">
+          <div class="Testimonial-header"><h1>Testimonials</h1></div>
+        <div class="Testimonials">
+          <div>
+            <div><i><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nesciunt repudiandae alias magnam saepe eligendi repellendus."</p></i></div>
+            <div class="Testimonials-items">
+              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_1.jpg" alt=""></div>
+              <div><span>Aytac Hüseynova</span></div>
+            </div>
+          </div>
+          <div>
+            <div><i><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> At, adipisci vel! Magnam sapiente dolor illum!"</p></i></div>
+            <div class="Testimonials-items">
+              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_2.jpg" alt=""></div>
+              <div><span>Nurlan Cahangirov</span></div>
+            </div>
+          </div>
+          <div>
+            <div><i></i><p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Facilis impedit pariatur sunt maiores explicabo sapiente."</p></i></div>
+            <div class="Testimonials-items">
+              <div><img src="	https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_3.jpg" alt=""></div>
+              <div><span>Vüqar Cümşüdlü</span></div>
+            </div>
+          </div>
+          </div>
+          </div>    
+        <div class="Fun-Fact">
+          <div class="Fun-Fact-header"><h1>Fun-Facts</h1></div>
+          <div class="Fun-Facts"> 
+          <div class="Fun-Facts-items">
+            <div><i><i class="far fa-smile"></i></i></div>  
+            <div><h1>Happy Clients</h1></div>
+            <div><span>1,024</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="far fa-clock"></i></i></div>
+            <div><h1>Working Hours</h1></div>
+            <div><span>6,256</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="fas fa-medal"></i></i></div>
+            <div><h1>Awards Won</h1></div>
+            <div><span>21</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="fas fa-mug-hot"></i></i></div>
+            <div><h1>Coffee Consumed</h1></div>
+            <div><span>20,000</span></div>
+          </div>
+          
+          
+        </div>
+        </div>
+      </section>
+      <!-- About Me Part-2  Section End -->
+    </section>
+    <!-- About Me Section End -->
+    <!-- Resume Section Start -->
+    <section id="Resume">
+      <div class="Top">
+        <div class="title">Resume</div>
+        <div class="description">6 years of experience</div>
+      </div>
+      <div class="Bottom">
+        <div class="Education">
+          <div><h1>Education</h1></div>
+          <div class="Education-info">
+          <div><h5>2010</h5></div>
+          <div><h3>Specialization Course</h3></div>
+          <div><span>University of Studies</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+        </div>
+          <div class="Education-info">
+          <div><h5>2010</h5></div>
+          <div><h3>Specialization Course</h3></div>
+          <div><span>University of Studies</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+        </div>
+          <div class="Education-info">
+          <div><h5>2010</h5></div>
+          <div><h3>Specialization Course</h3></div>
+          <div><span>University of Studies</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+        </div>
+        </div>
+        <div class="Experience">         
+          <div><h1>Experience</h1></div>
+          <div class="Experience-info">
+          <div><h5>Dec 2012 - Current</h5></div>
+          <div><h3>Frontend-developer</h3></div>
+          <div><span>Web Agency</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+          </div>
+          <div class="Experience-info">
+          <div><h5>Dec 2012 - Current</h5></div>
+          <div><h3>Frontend-developer</h3></div>
+          <div><span>Web Agency</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+          </div>
+          <div  class="Experience-info">
+          <div><h5>Dec 2012 - Current</h5></div>
+          <div><h3>Frontend-developer</h3></div>
+          <div><span>Web Agency</span></div>
+          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="Footer">
+        <div><a class="Button" target="_blank" href="">Download CV</a></div>
+      </div>
+    </section>
+<!-- Resume Section End -->
+<!-- Portfolio Section Start -->
+<section id="Portfolio">
+  <div class="Header">
+   <div><H1>Portfolio</H1></div>
+    <div class="mybest"> <span>My Best Works</span></div>
+  </div>
+  <div class="Navbar">
+    <ul>
+      <li><a href="All">All</a></li>
+      <li><a href="Media">Media</a></li>
+      <li><a href="illustration">Illustration</a></li>
+      <li><a href="Video">Video</a></li>
+    </ul>
+  </div>
+  <div class="defter">
+    <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
+      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div> 
+  </div>
+</section>
+<!-- Portfolio Section End -->
+<!-- Blog Section Start -->
+<section id="Blog">
+  <div class="blog-title">
+   <div><H1>Blog</H1></div>
+    <div class="blog-best"><span>My blogs</span></div>
+  </div>
+      <div class="content">
+    <div class="content-item">
+      <a href="">
+        <img src="https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=4:3,smart&width=1200&dpr=2">
+      </a>
+    <h1>Web proqramlaşdırma nədir?</h1> 
+      <h5>16.01.2022</h5>
+    </div>
+    <div class="content-item">
+      <a href="">
+        <img src="https://resources.workable.com/wp-content/uploads/2019/07/temp_remote_work-01.png">
+      </a>
+      <h1>Remote iş modeli haqqında məlumat</h1>
+      <h5>16.01.2022</h5>
+    </div>
+    <div class="content-item">
+      <a href="">
+        <img src="https://res.cloudinary.com/gurucom/images/w_770,h_515,c_fill,g_auto/dpr_2/dpr_2/f_auto,q_auto/v1630998719/wordpress/blog/average-cost-of-a-freelance-web-developer/average-cost-of-a-freelance-web-developer-770x515.jpg?_i=AA">
+      </a>
+      <h1>Freelance işləməyin 5 ən böyük üstün cəhəti</h1>
+      <h5>16.01.2022</h5>
+    </div>
+  </div>
+</section>
+<!-- Blog Section End -->
+<!-- Contact Section Start -->
+<section id="Contact">
+  <div class="Contact-title">
+    <div><h1>Contact</h1></div>
+    <div class="mycontact"><span>Get in touch</span></div>
+  </div>
+  <div class="Contact-body">
+    <div class="melumat">
+      <div><h1>Get in touch</h1></div>
+      <div class="melumat-main">
+      <div><p>You can use the following means of communication to contact me.</p></div>
+      <div class="items">
+        <div class="hisse">
+          <div><i class="fas fa-map-marker-alt"></i></div>
+        <span>Azərbaycan Bakı</span> 
+      </div>
+        <div class="hisse">
+          <div><i class="far fa-envelope"></i></div>
+        <span>Zalova0202@gmail.com</span>
+      </div>
+        <div class="hisse">
+          <div><i class="fas fa-phone-alt"></i></div>
+        <span>050 538 89 25</span>
+      </div>
+        <div class="hisse">
+          <div><i class="fas fa-check"></i></div>
+        <span> Freelance:   Avaliable</span>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="blank">
+     <div><h1>Contact Form</h1></div>
+     <form action="">
+      <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+      <textarea id="form_message" name="message" class="form-control" placeholder="Message for Me" rows="4" required="required" data-error="Please, leave me a message."style="height: 93px;"></textarea>
+      <input type="submit" class="form-control" value="Send message">
+     </form>
+  </div>
+</section>
+<!-- Contact Section End -->
+  <link rel="stylesheet" href="app.js">
+  </body>
 </html>
+  </div>
+
