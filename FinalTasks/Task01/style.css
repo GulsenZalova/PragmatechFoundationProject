@@ -1,16 +1,19 @@
+/* Resert */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/* ümumi skrol */
 html {
     scroll-behavior: smooth;
   }
-
+/* Body Font Family */
 body{
     font-family: "Oswald"; 
 }
-body button {
+/* Səhifədəki bütün buttonların ümumi xassələri */
+body button{
     background-color: #5dd39e;
     width: 200px;
     height: 45px;
@@ -27,6 +30,7 @@ body button {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+/* website ümumi həcm */
 .website{
     max-width: 100%;
     height: 100vh;
@@ -125,9 +129,10 @@ font-weight: 300;
 }
 .home-main-form h5{
     text-align: center;
-    color: black; 
+    color: #333; 
     font-size: 20px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 .home-main-form input {
     display: flex;
@@ -160,6 +165,16 @@ font-weight: 300;
     justify-content: center;
     margin-bottom: 50px;
 }
+.about-shortinfo-header h1{
+font-size: 30px;
+font-weight: 100;
+color: #333;
+}
+.about-shortinfo-header span{
+font-size: 18px;
+font-weight: 100;
+color: #888;
+}
 .about-shortinfo-p{
     text-align: center;
     justify-content: center;
@@ -168,8 +183,9 @@ font-weight: 300;
     font-weight: 100;
     border-top: 1px solid rgb(219, 216, 216);
     padding-top: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 30px;
 }
 .about-shortinfo-image{
     display: grid;
@@ -182,14 +198,20 @@ font-weight: 300;
     object-fit: cover;
 }
 
-.about-advantegs-header{
+.about-advantegs-header h5{
     text-align: center;
     margin: 40px 0px;
     font-size: 30px;
+    font-weight: 100;
+}
+.about-advantegs-header h5 span{
+    color: #5dd39e; 
 }
 .about-advantegs-groups{
     display: flex;
     flex-direction: row;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 .about-advantegs-group{
     margin-left: 50px;
@@ -200,11 +222,20 @@ flex-direction: row;
 margin-top: 30px;
 }
 .about-advantegs-group-text{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .about-advantegs-group-text h5{
     margin-bottom: 10px;
-    font-size: 15 px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 100;
+
+    
+}
+.about-advantegs-group-text p{
+    color: #888;
+    font-size: 15px;
+    font-weight: 100;
 }
 .about-advantegs-group-item i{
     font-size: 50px;  
@@ -230,6 +261,9 @@ margin: 0px auto;
     color: #fff;
     padding-bottom: 30px;
 }
+.about-experience-items h1 span{
+    color: #5dd39e; 
+}
 .about-experience-items p{
     font-size: 20px;
     color: #fff;
@@ -246,17 +280,24 @@ margin: 0px auto;
 text-align: center; 
 justify-content: center;
 margin: 0px auto;
-margin-top: 70px;
+margin-top: 50px;
 }
 .products-presentation h1{
-    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.products-presentation h1 span{
+    color: #5dd39e; 
 }
 .products-presentation-items{
 display: grid;
 grid-template-columns:repeat(3 ,1fr);
-grid-gap: 30px;
+grid-gap: 50px;
 margin-left: 120px;
 margin-right: 120px;
+margin-bottom: 30px;
 }
 .products-presentation-items h4{
 background-color: #fff;
@@ -264,22 +305,29 @@ width: 100%;
 height: auto;
 text-align: left;
 padding-left: 40px;
+padding-top: 10px;
+font-size: 18px;
+color: #333;
+font-weight: 100;
 }
 .products-presentation-items img{
 width: 100%;
 height: auto;
 border-radius: 3%;
-
 }
 
 /* End Products Section */
+/* Start Testimonials Section */
 #Testimonials{
     margin-top: 50px;
 }
 .Testimonials-header{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 40px;
+}
+.Testimonials-header span{
+    color: #5dd39e;
 }
 .Testimonials-items{
     display: flex;
@@ -293,17 +341,21 @@ border-radius: 3%;
 }
 .Testimonials-item-text{
     width: 250px;
+    font-size: 30px;
+    font-weight: 100;
 }
-.Testimonials-item-text h1{}
+.Testimonials-item-text h1{
+    margin-bottom: 50px;
+}
 .Testimonials-item-text span{
-   padding-bottom: 20px;
-   
+   padding-bottom: 20px; 
 }
 .Testimonials-item-text p{
    padding-top: 20px;
    font-size: 15px;
+   color: #333;
+   font-weight: 100;
 }
-
 .Testimonials-item img{
     margin-right: 20px;
     border-radius: 50%;
@@ -318,15 +370,15 @@ margin-left: 120px;
 margin-right: 120px;
 padding-top: 100px;
 text-align: center;  
-
+font-size: 40px;
+font-weight: 100;
+color: #fff;
 }
 .Testimonials-info-text h3 {
 font-size: 40px;
 color: #fff;
 margin-bottom: 50px;
 }
-
-
 /* End Testimonials Section */
 /* Start News Section */
 .News-container{
@@ -335,7 +387,6 @@ background-image: url(	https://livedemo00.template-help.com/wt_prod-12465/images
 background-size: cover;
 object-fit: cover;
 height: 600px;
-
 }
 .News-container-elements{
  display: flex;
@@ -365,14 +416,29 @@ height: 500px;
     line-height: 30px;
   
 }
+.News-information h5{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+}
+.News-information h5 span{ 
+    color: #5dd39e;
+}
 
 /* End News Section */
+/* Start Contacts Section */
 #Contacts{
    margin-top: 100px; 
 }
 .Contacts-header{
-  text-align: center;
+text-align: center;
 margin-bottom: 50PX;
+color: #333;
+font-size: 20px;
+font-weight: 700;
+
 }
 .Contacts-info{
     display: flex;
@@ -384,6 +450,9 @@ margin-bottom: 50PX;
 .Contacts-info h1{
 text-align: center;
 margin-bottom: 30px;
+color: #333;
+font-size: 30px;
+font-weight: 100;
 }
 .Contacts-info-adresses{
     height: 400px;
@@ -393,7 +462,11 @@ margin-bottom: 30px;
     flex-direction: row;
     margin-bottom: 18px;  
 }
-
+.Contacts-info-adress-text h5{
+    color: #333;
+    font-size: 20px;
+    font-weight: 100;
+}
 .Contacts-info-adress img{
 margin-right: 30px;
 border-radius: 5px;
@@ -402,8 +475,15 @@ margin-bottom: 20px;
 .Contacts-info-adress-text p{
  margin-bottom: 20px;
  margin-top: 10px;
+ color: #888;
+ font-size: 15px;
+ font-weight: 100;
 }
-
+.Contacts-info-adress-text span{
+ font-size: 15px;
+ font-weight: 100;
+ color: #333;
+}
 .Contacts-info-form {
     background-color: white;
     padding: 0px 35px;
@@ -421,9 +501,10 @@ margin-bottom: 20px;
 }
 .Contacts-info-form h5{
     text-align: center;
-    color: black; 
+    color: #333; 
     font-size: 20px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 .Contacts-info-form input {
     display: flex;
@@ -440,8 +521,8 @@ margin-bottom: 20px;
     -webkit-appearance: none;
     line-height: 28px;
 }
-
 /* End Contacts Section */
+/* Start Footer Section */
 #Footer{
 height: 330px;
 background-color: #131313;
@@ -457,13 +538,10 @@ margin-top: 100px;
     padding-top: 80px;
 
 }
-
 .Footer-elements p{
     padding-top: 20px;
-    color: #fff;
-
+    color: #888;
 }
-
 .Footer-element-icon i{
     color: #fff;
     background-color: #131313;
@@ -477,4 +555,4 @@ margin-top: 100px;
 .Footer-element-icon i:hover{
     border: 2px solid ;
 }
-
+/* End Footer Section */
