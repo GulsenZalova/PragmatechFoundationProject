@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 class Skil:
     def __init__(self,_id,_img,_title):
-      self.id=_id,
-      self.img=_img,
+      self.id=_id
+      self.img=_img
       self.title=_title
   
 skil=[
@@ -39,9 +39,9 @@ skil=[
 
 class Testimonial :
   def __init__(self,_id,_shortİnfo,_img,_ad):
-      self.id=_id,
-      self.info=_shortİnfo,
-      self.img=_img,
+      self.id=_id
+      self.info=_shortİnfo
+      self.img=_img
       self.ad=_ad
     
 testimonial=[
@@ -61,31 +61,18 @@ testimonial=[
 
 class Blog:
   def __init__(self,_id,_img,_title,_date):
-      self.id=_id,
-      self.img=_img,
-      self.title=_title,
-      self.date=_date
+    self.id=_id
+    self.img=_img
+    self.title=_title
+    self.date=_date
     
 blog=[
-    Blog(
-     random.randint(1, 1000),
-     "https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=4:3,smart&width=1200&dpr=2",
-     "Mənim ilk blogum",
-     "28.01.2022"
-  ),
-      Blog(
-     random.randint(1, 1000),
-     "https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=4:3,smart&width=1200&dpr=2",
-     "Mənim ilk blogum",
-     "28.01.2022"
-  ),
-        Blog(
-     random.randint(1, 1000),
-     "https://www.betterteam.com/images/web-developer-job-description-6494x4331-2020128.jpeg?crop=4:3,smart&width=1200&dpr=2",
-     "Mənim ilk blogum",
-     "28.01.2022"
-  ),
-      
+  Blog(
+    random.randint(1, 1000),
+    "https://lmpixels.com/demo/unique/unique-vcard/images/testimonials/testimonial_photo_1.jpg",
+    "Mənim ilk blogum",
+    "28.01.2022"
+  )      
 ]
 
     

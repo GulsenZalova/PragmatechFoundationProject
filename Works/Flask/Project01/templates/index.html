@@ -159,18 +159,17 @@
 
         <div class="Testimonial">
           <div class="Testimonial-header"><h1>Testimonials</h1></div>
-       {% for index in alltestimonial %}
-       <div class="Testimonials">
-        <div>
-          <div><i><p>{{index.info}}</p></i></div>
-          <div class="Testimonials-items">
-            <div><img src="{{index.img}}" alt=""></div>
-            <div><span>{{index.ad}}</span></div>
+        <div class="Testimonials">
+          {% for index in alltestimonial %}
+          <div>
+            <div><i><p>{{index.info}}</p></i></div>
+            <div class="Testimonials-items">
+              <div><img src="{{index.img}}" alt=""></div>
+              <div><span>{{index.ad}}</span></div>
+            </div>
           </div>
+          {% endfor %}
         </div>
-       {% endfor %}
-          </div>
-          </div>  
            
         <div class="Fun-Fact">
           <div class="Fun-Fact-header"><h1>Fun-Facts</h1></div>
