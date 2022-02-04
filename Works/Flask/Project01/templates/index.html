@@ -212,43 +212,23 @@
         <div class="Education">
           <div><h1>Education</h1></div>
           <div class="Education-info">
-          <div><h5>2010</h5></div>
-          <div><h3>Specialization Course</h3></div>
-          <div><span>University of Studies</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+            {% for index in alleducation %}
+            <div><h5>"{{index.date}}"</h5></div>
+            <div><h3>"{{index.title}}"</h3></div>
+            <div><span>"{{index.edu}}"</span></div>
+            <div><p>"{{index.shortinfo}}"</p></div>
+            {% endfor %}
         </div>
-          <div class="Education-info">
-          <div><h5>2010</h5></div>
-          <div><h3>Specialization Course</h3></div>
-          <div><span>University of Studies</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
-        </div>
-          <div class="Education-info">
-          <div><h5>2010</h5></div>
-          <div><h3>Specialization Course</h3></div>
-          <div><span>University of Studies</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
-        </div>
-        </div>
+        
         <div class="Experience">         
           <div><h1>Experience</h1></div>
           <div class="Experience-info">
-          <div><h5>Dec 2012 - Current</h5></div>
-          <div><h3>Frontend-developer</h3></div>
-          <div><span>Web Agency</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
-          </div>
-          <div class="Experience-info">
-          <div><h5>Dec 2012 - Current</h5></div>
-          <div><h3>Frontend-developer</h3></div>
-          <div><span>Web Agency</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
-          </div>
-          <div  class="Experience-info">
-          <div><h5>Dec 2012 - Current</h5></div>
-          <div><h3>Frontend-developer</h3></div>
-          <div><span>Web Agency</span></div>
-          <div><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+            {% for index in allexperience%}
+          <div><h5>"{{index.date}}"</h5></div>
+          <div><h3>"{{index.title}}"</h3></div>
+          <div><span>"{{index.edu}}"</span></div>
+          <div><p>"{{index.shortinfo}}"</p></div>
+          {% endfor %}
           </div>
         </div>
       </div>
@@ -272,18 +252,9 @@
     </ul>
   </div>
   <div class="defter">
-    <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div>
-      <div><img src="https://lmpixels.com/demo/unique/unique-vcard/images/portfolio/1.jpg" alt=""></div> 
+   {% for index in allportfolio %}
+   <div><img src="{{index.img}}" alt=""></div>
+   {% endfor %}
   </div>
 </section>
 <!-- Portfolio Section End -->
@@ -294,16 +265,17 @@
     <div class="blog-best"><span>My blogs</span></div>
   </div>
   <div class="content">
-     {% for index in allblog %}
+    {% for index in allblog %}
       <div class="content-item">
         <a href="">
           <img src="{{index.img}}">
         </a>
          <h1>{{index.title}}</h1> 
         <h5>{{index.date}}</h5>
-     {% endfor %}
     </div>
+    {% endfor %}
   </div>
+ 
 </section>
 <!-- Blog Section End -->
 <!-- Contact Section Start -->
