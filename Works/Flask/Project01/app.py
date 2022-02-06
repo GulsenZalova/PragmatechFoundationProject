@@ -222,9 +222,9 @@ def messages():
       "tarix":_tarix 
     }
     mesajlar.append(mesaj)
-    return render_template("formdata.html", messages=mesaj )
+    return render_template("formdata.html", messages=mesaj)
      
-  return render_template("formdata.html")
+  # return render_template("formdata.html")
 
 if __name__=="__main__":
   app.run(debug=True)
