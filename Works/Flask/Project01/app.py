@@ -1,6 +1,7 @@
 
 from flask import Flask, render_template
 import random
+import datetime
 app = Flask(__name__)
 
 class Skil:
@@ -200,5 +201,30 @@ experience=[
 @app.route("/")  
 def hello_World():
   return render_template("index.html",allskil=skil,alltestimonial=testimonial,allblog=blog,allportfolio=portfolio,alleducation=education,allexperience=experience)
+
+
+mesajlar=[]
+@app.route("/", methods=['GET','POST'])  
+def add():
+  return render_template("index.html")
+  
+@app.route("/messages",methods=['GET','POST'])  
+def messages():
+  if request.method=="POST":
+    _ad=request.form["ad"]
+    _email=request.form["email"]
+    _mesaj=request.form["mesaj"]
+    _tarix=datetime.date.today 
+    mesaj={
+      "ad":_ad,
+      "email":_email,
+      "mesaj":_mesaj,
+      "tarix":_tarix 
+    }
+    mesajlar.append(mesaj)
+    return render_template("formdata.html", messages=mesaj )
+     
+  return render_template("formdata.html")
+
 if __name__=="__main__":
   app.run(debug=True)
