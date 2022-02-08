@@ -1,8 +1,9 @@
-
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 import random
-import datetime
+from datetime import date
+
 app = Flask(__name__)
+
 
 class Skil:
     def __init__(self,_id,_img,_title):
@@ -89,6 +90,7 @@ blog=[
     "28.01.2022"
   )             
 ]
+
 
 class Portfolio:
   def __init__(self,_id,_img):
@@ -200,21 +202,17 @@ experience=[
 ]
 @app.route("/")  
 def hello_World():
-  return render_template("index.html",allskil=skil,alltestimonial=testimonial,allblog=blog,allportfolio=portfolio,alleducation=education,allexperience=experience)
+  return render_template("app/index.html",allskil=skil,alltestimonial=testimonial,allblog=blog,allportfolio=portfolio,alleducation=education,allexperience=experience)
 
 
 mesajlar=[]
-@app.route("/", methods=['GET','POST'])  
-def add():
-  return render_template("index.html")
-  
 @app.route("/messages",methods=['GET','POST'])  
 def messages():
   if request.method=="POST":
     _ad=request.form["ad"]
     _email=request.form["email"]
     _mesaj=request.form["mesaj"]
-    _tarix=datetime.date.today 
+    _tarix=date.today()
     mesaj={
       "ad":_ad,
       "email":_email,
@@ -222,7 +220,7 @@ def messages():
       "tarix":_tarix 
     }
     mesajlar.append(mesaj)
-    return render_template("formdata.html", messages=mesaj)
+    return render_template("admin/formdata.html", messages=mesajlar)
      
   # return render_template("formdata.html")
 

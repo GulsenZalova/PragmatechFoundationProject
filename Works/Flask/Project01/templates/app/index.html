@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <!-- Container Section Start -->
+    <div id="home">
+      <section id="container">
+        <div class="sidebar">
+          <div class="sidebar-title">
+            <div class="image">
+              <img
+                src="https://lmpixels.com/demo/unique/unique-vcard/images/photo.png"
+                alt=""
+              />
+            </div>
+            <div class="header">Gülşən Zalova</div>
+          </div>
+          <div class="sidebar-item">
+            <ul>
+              <li>
+                <a href="#home">
+                  <div><i class="fas fa-home"></i></div>
+                  <h1>Home</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#About-Me">
+                  <div><i class="fas fa-user"></i></div>
+                  <h1>About Me</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#Resume">
+                  <div><i class="far fa-folder-open"></i></div>
+                  <h1>Resume</h1>
+                </a>
+              </li>
+                <li>
+                <a href="#Portfolio">
+                  <div><i class="fas fa-briefcase"></i></div>
+                  <h1>Portfolio</h1>
+                </a>
+              </li>
+              <li>
+                <a href="#Blog">
+                  <div><i class="fas fa-blog"></i></div>
+                  <h1>Blog</h1>
+                </a>
+              </li>
+          
+              <li>
+                <a href="#Contact">
+                  <div><i class="far fa-envelope"></i></div>
+                  <h1>Contact</h1>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="background">
+          <div class="background-title">
+            <h1>Gülşən Zalova</h1>
+            <div class="wrapper">
+              <ul class="dynamic-txts">
+                <li><span> Frontend-developer</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Container Section End -->
+  <div class="app">
+    <!-- About Me Section Start -->
+    <section id="About-Me">
+      <!-- About Me Part-1  Section Start -->
+      <section class="Part-1">
+        <div class="Header">
+          <div><h1>About Me</h1></div>
+          <div class="myheader"><span>Artist, Thinker, Creative Doer</span></div>
+        </div>
+        <div class="Main">
+          <div class="foto">
+            <img
+              src="https://lmpixels.com/demo/unique/unique-vcard/images/photo.png"
+              alt=""
+            />
+          </div>
+          <div class="paragraph">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              distinctio aliquam doloremque deserunt! Odio, voluptate eius?
+              Expedita ipsa cumque ut culpa alias sint incidunt illum deserunt
+              harum. Numquam labore impedit deserunt, eligendi minima
+              necessitatibus quo pariatur unde! Option. <br>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis quaerat temporibus nostrum tempora laboriosam magnam quas fuga consectetur necessitatibus!
+            </p>
+          </div>
+          <div class="info">
+            <div class="rows">
+            <ul>
+              <li><a href="Age">Yaş:</a><span>25</span></li>
+              <li>
+                <a href="Residence">Yaşayış yeri:</a><span>Azərbaycan</span>
+              </li>
+              <li><a href="Adress"> Ünvan:</a><span>Bakı Şəhəri</span></li>
+              <li>
+                <a href="e-mail">Mail:</a><span>zalova0202@gmail.com</span>
+              </li>
+              <li>
+                <a href="Phone">Telefon Nömrəsi:</a><span>0505388925</span>
+              </li>
+              <li><a href="Freelance">Freelance:</a><span>Mövcuddur</span></li>
+            </ul>
+            </div>
+            <div class="social-media">
+            <ul>
+              <li><a href="Twiter"></a><i class="fab fa-twitter"></i></li>
+              <li><a href="Facebook"></a><i class="fab fa-facebook-f"></i></li>
+              <li>
+                <a href="Google+"></a><i class="fab fa-google-plus-g"></i>
+              </li>
+              <li><a href="Youtube"></a><i class="fab fa-youtube"></i></li>
+              <li><a href="Instagram"></a><i class="fab fa-instagram"></i></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Me Part-1 Section End -->
+      <!-- About Me Part-2 Section Start -->
+      <section id="Part-2">
+        
+        <div class="Skils">
+          <div class="Skils-header"><h1>Skils</h1></div>
+          <div class="Skils-item">
+
+          {% for index in allskil %}
+          <div class="Skil">
+            <div><img src={{index.img}}></div>
+            <div><h1>{{index.title}}</h1></div>
+          </div>
+          {% endfor %}    
+        </div>
+        </div>
+
+        <div class="Testimonial">
+          <div class="Testimonial-header"><h1>Testimonials</h1></div>
+        <div class="Testimonials">
+          {% for index in alltestimonial %}
+          <div>
+            <div><i><p>{{index.info}}</p></i></div>
+            <div class="Testimonials-items">
+              <div><img src="{{index.img}}" alt=""></div>
+              <div><span>{{index.ad}}</span></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+           
+        <div class="Fun-Fact">
+          <div class="Fun-Fact-header"><h1>Fun-Facts</h1></div>
+          <div class="Fun-Facts"> 
+          <div class="Fun-Facts-items">
+            <div><i><i class="far fa-smile"></i></i></div>  
+            <div><h1>Happy Clients</h1></div>
+            <div><span>1,024</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="far fa-clock"></i></i></div>
+            <div><h1>Working Hours</h1></div>
+            <div><span>6,256</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="fas fa-medal"></i></i></div>
+            <div><h1>Awards Won</h1></div>
+            <div><span>21</span></div>
+          </div>
+          <div class="Fun-Facts-items">
+            <div><i><i class="fas fa-mug-hot"></i></i></div>
+            <div><h1>Coffee Consumed</h1></div>
+            <div><span>20,000</span></div>
+          </div>
+          
+          
+        </div>
+        </div>
+      </section>
+      <!-- About Me Part-2  Section End -->
+    </section>
+    <!-- About Me Section End -->
+    <!-- Resume Section Start -->
+    <section id="Resume">
+      <div class="Top">
+        <div class="title">Resume</div>
+        <div class="description">6 years of experience</div>
+      </div>
+      <div class="Bottom">
+        <div class="Education">
+          <div><h1>Education</h1></div>
+          <div class="Education-info">
+            {% for index in alleducation %}
+            <div><h5>"{{index.date}}"</h5></div>
+            <div><h3>"{{index.title}}"</h3></div>
+            <div><span>"{{index.edu}}"</span></div>
+            <div><p>"{{index.shortinfo}}"</p></div>
+            {% endfor %}
+        </div>
+        
+        <div class="Experience">         
+          <div><h1>Experience</h1></div>
+          <div class="Experience-info">
+            {% for index in allexperience%}
+          <div><h5>"{{index.date}}"</h5></div>
+          <div><h3>"{{index.title}}"</h3></div>
+          <div><span>"{{index.edu}}"</span></div>
+          <div><p>"{{index.shortinfo}}"</p></div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="Footer">
+        <div><a class="Button" target="_blank" href="">Download CV</a></div>
+      </div>
+    </section>
+<!-- Resume Section End -->
+<!-- Portfolio Section Start -->
+<section id="Portfolio">
+  <div class="Header">
+   <div><H1>Portfolio</H1></div>
+    <div class="mybest"> <span>My Best Works</span></div>
+  </div>
+  <div class="Navbar">
+    <ul>
+      <li><a href="All">All</a></li>
+      <li><a href="Media">Media</a></li>
+      <li><a href="illustration">Illustration</a></li>
+      <li><a href="Video">Video</a></li>
+    </ul>
+  </div>
+  <div class="defter">
+   {% for index in allportfolio %}
+   <div><img src="{{index.img}}" alt=""></div>
+   {% endfor %}
+  </div>
+</section>
+<!-- Portfolio Section End -->
+<!-- Blog Section Start -->
+<section id="Blog">
+  <div class="blog-title">
+   <div><H1>Blog</H1></div>
+    <div class="blog-best"><span>My blogs</span></div>
+  </div>
+  <div class="content">
+    {% for index in allblog %}
+      <div class="content-item">
+        <a href="">
+          <img src="{{index.img}}">
+        </a>
+         <h1>{{index.title}}</h1> 
+        <h5>{{index.date}}</h5>
+    </div>
+    {% endfor %}
+  </div>
+ 
+</section>
+<!-- Blog Section End -->
+<!-- Contact Section Start -->
+<section id="Contact">
+  <div class="Contact-title">
+    <div><h1>Contact</h1></div>
+    <div class="mycontact"><span>Get in touch</span></div>
+  </div>
+  <div class="Contact-body">
+    <div class="melumat">
+      <div><h1>Get in touch</h1></div>
+      <div class="melumat-main">
+      <div><p>You can use the following means of communication to contact me.</p></div>
+      <div class="items">
+        <div class="hisse">
+          <div><i class="fas fa-map-marker-alt"></i></div>
+        <span>Azərbaycan Bakı</span> 
+      </div>
+        <div class="hisse">
+          <div><i class="far fa-envelope"></i></div>
+        <span>Zalova0202@gmail.com</span>
+      </div>
+        <div class="hisse">
+          <div><i class="fas fa-phone-alt"></i></div>
+        <span>050 538 89 25</span>
+      </div>
+        <div class="hisse">
+          <div><i class="fas fa-check"></i></div>
+        <span> Freelance:   Avaliable</span>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="blank">
+     <div><h1>Contact Form</h1></div>
+     <form action="/messages" method="POST">
+      <input id="form_name" type="text" name="ad" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+      <textarea id="form_message" name="mesaj" class="form-control" placeholder="Message for Me" rows="4" required="required" data-error="Please, leave me a message."style="height: 93px;"></textarea>
+      <input type="submit" class="form-control" value="Send message">
+     </form>
+  </div>
+</section>
+<!-- Contact Section End -->
+  <link rel="stylesheet" href="app.js">
+  </body>
+</html>
+  </div>
+
