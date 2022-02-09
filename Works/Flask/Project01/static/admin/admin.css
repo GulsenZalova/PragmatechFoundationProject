@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: oxygen,Helvetica,sans-serif;
+  }
+ .button{
+    width: 200px;
+    height: 50px;
+    background-color: #555;
+    color: #fff;
+    background-color: #ff724c;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+  }
+  
+  body 
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Container Section Start */
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    position: fixed;
+  }
+  .background {
+    height: 730px;
+    width: calc(100%-200px);
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    margin-left: 200px;
+    border: 1px solid gray;
+    background-image: url(https://lmpixels.com/demo/unique/unique-vcard/images/main_bg_light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+  }
+  .background-title {
+    margin-top: 300px; 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center; 
+  }
+  .background-title h1 {
+    color: #ff724c;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
+  .wrapper .dynamic-txts{
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    animation: slide 6s steps(1) infinite;
+    position: relative;
+    top: 0;
+  }
+  @keyframes slide{
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts span{
+    color: #222;
+    font-size: 30px;
+    font-weight: 100;
+ 
+  }
+ 
+  .dynamic-txts li span{
+    position: relative;
+  
+  }
+  .dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color:rgb(252, 247, 247);
+  border-left: 2px solid #333;
+  animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    100%{
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  .sidebar {
+    background-color: #222;
+    border-right: 3px solid #333;
+  }
+  .header {
+    color: #ff724c;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+  .image img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .sidebar-item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .sidebar ul li a,span{
+    color:#fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100px;
+    padding: 10px 10px;
+  }
+  .sidebar ul li a i{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-style: normal;
+  }
+  .sidebar ul li a h1{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .sidebar-item ul li:hover{
+    background-color: #ff724c;
+    transition: all ease 0.4s;
+  }
+  .app {
+    background-color: #222;
+  }
+  /* Container Section End */
+  
+  /* About Me Start */
+  #About-Me {
+    box-sizing: border-box;
+    width: calc(100%-200px);
+    margin: 0px auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    height: 100vh;
+  }
+  .Header {
+    padding-top: 30px;
+    height: 100px;
+    text-align: center;
+  }
+  .Header H1 {
+    font-weight: 700;
+    color: #555;
+    font-size: 70px;
+    padding-top: 50px;
+  }
+  .about-me-input{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Resume Section Start */
+  #Resume {
+    box-sizing: border-box;
+    width: calc(100%-200px);
+    margin-right: 0px;
+    margin-top: 0px;
+    /* padding-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 200px;
+    height: 100vh;
+  }
+  .Top {
+    height: 100px;
+    text-align: center;
+  }
+  .title {
+    display: block;
+    color: #555555;
+    margin-top: 7px;
+    font-size: 70px;
+  }
+  .resume-input{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  /* Resume Section End */
+  /* Portfolio Section Start */
+  #Portfolio {
+    box-sizing: border-box;
+    width: calc(100%-200px);
+    margin: 0px auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    height: 100vh;
+  }
+  .Header {
+    text-align: center;
+    height: 200px;
+  }
+  .portfolio-input{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  /* Portfolio Section End */
+  /* Blog Section Start */
+  #Blog{
+    box-sizing: border-box;
+    width: calc(100%-200px);
+    margin: 0px auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    padding-top: 80px;
+    height: 100vh;
+  }
+  
+   .blog-title{
+    text-align: center;
+    height: 200px;
+  }
+  .blog-title h1{
+    display: block;
+    color: #555555;
+    margin-top: 7px;
+    font-size: 70px;
+  }
+
+  .blog-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .form-control{
+      margin-top: 20px;
+      width: 600px;
+      height: 40px;
+      border-radius: 10px;
+  }
+  /* Blog Section End */
+  /* Contact Section Start */
+  #Contact {
+    width: calc(100%-200px);
+    margin: 0px auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 80px;
+    height: 100vh;
+  }
+  .Contact-title {
+    height: 200px;
+    text-align: center;
+  }
+  .Contact-title h1 {
+    color: #555;
+    font-size: 70px;
+    padding-top: 50px;
+  }
+  /* Contact Section End */
