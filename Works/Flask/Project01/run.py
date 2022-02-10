@@ -1,35 +1,24 @@
 from flask import Flask, render_template,request
 import random
 from datetime import date
+from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
+UPLOAD_FOLDER = 'static/uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 
-# from controllers.admin_routes import *
-# from controllers.app_routes import *
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
-mesajlar=[]
-@app.route("/", methods=['GET','POST'])  
-def add():
-  return render_template("index.html")
-  
-@app.route("/messages",methods=['GET','POST'])  
-def messages():
-  if request.method=="POST":
-    _ad=request.form["ad"]
-    _email=request.form["email"]
-    _mesaj=request.form["mesaj"]
-    _tarix=datetime.date.today 
-    mesaj={
-      "ad":_ad,
-      "email":_email,
-      "mesaj":_mesaj,
-      "tarix":_tarix 
-    }
-    mesajlar.append(mesaj)
-    return render_template("formdata.html", messages=mesajlar)
 
-  return render_template("formdata.html")
-  # return render_template("formdata.html")
+#app routes
+from app.routes import *
 
-if __name__=="__main__":
+#admin routes
+from admin.routes import *
+
+if __name__=='__main__':
+  db.create_all()
   app.run(debug=True)

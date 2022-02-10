@@ -1,0 +1,50 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="About-Me">
+    <div class="Header">
+      <div><h1>About Me</h1></div>
+    </div>
+    <form action="/admin/about" method="POST" enctype="multipart/form-data">
+      <div class="about-me-input">
+        <input
+          type="file"
+          class="form-control"
+          name="about_img"
+          placeholder="Add New İmage"
+        />
+      </div>
+      <div class="about-me-input">
+        <input
+          type="text"
+          class="form-control"
+          name="about_title"
+          placeholder="Add Title"
+        />
+      </div>
+      <div class="about-me-input">
+        <input type="submit" class="button" name="Add New Skils" />
+      </div>
+    </form>
+    <div class="pb-60">
+        <table class="table rounded text-light">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for abt in about%}
+                <tr>
+                    <td>{{abt.id}}</td>
+                    <td>{{abt.about_title}}</td>
+                    <td><a href="/aboutEdit/{{abt.id}}"><i class="far fa-edit" style="color: #20C997;"></i></a></td>
+                    <td><a href="/aboutDelete/{{abt.id}}"><i class="far fa-trash-alt" style="color: #20C997;"></i></a></td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

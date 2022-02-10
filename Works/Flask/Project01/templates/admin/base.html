@@ -1,197 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/static/admin/admin.css" />
-  </head>
-  <body>
-    <!-- Container Section Start -->
-    <div id="home">
-      <section id="container">
-        <div class="sidebar">
-          <div class="sidebar-title">
-            <div class="image">
-              
-            </div>
-            <div class="header">Admin Panel</div>
-          </div>
-          <div class="sidebar-item">
-            <ul>
-              <li>
-                <a href="#home">
-                  <div><i class="fas fa-home"></i></div>
-                  <h1>Home</h1>
-                </a>
-              </li>
-              <li>
-                <a href="#About-Me">
-                  <div><i class="fas fa-user"></i></div>
-                  <h1>About Me</h1>
-                </a>
-              </li>
-              <li>
-                <a href="#Resume">
-                  <div><i class="far fa-folder-open"></i></div>
-                  <h1>Resume</h1>
-                </a>
-              </li>
-                <li>
-                <a href="#Portfolio">
-                  <div><i class="fas fa-briefcase"></i></div>
-                  <h1>Portfolio</h1>
-                </a>
-              </li>
-              <li>
-                <a href="#Blog">
-                  <div><i class="fas fa-blog"></i></div>
-                  <h1>Blog</h1>
-                </a>
-              </li>
-          
-              <li>
-                <a href="#Contact">
-                  <div><i class="far fa-envelope"></i></div>
-                  <h1>Contact</h1>
-                </a>
-              </li>
+< lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="/static/admin/admin.css" />
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Container Section Start -->
+  <div id="home">
+    <section id="container">
+      <div class="sidebar">
+        <div class="sidebar-title">
+          <div class="image"></div>
+          <div class="header">Admin Panel</div>
+        </div>
+        <div class="sidebar-item">
+          <ul>
+            <li>
+              <a href="#home">
+                <div><i class="fas fa-home"></i></div>
+                <h1>Home</h1>
+              </a>
+            </li>
+            <li>
+              <a href="/admin/about">
+                <div><i class="fas fa-user"></i></div>
+                <h1>About Me</h1>
+              </a>
+            </li>
+            <li>
+              <a href="#Resume">
+                <div><i class="far fa-folder-open"></i></div>
+                <h1>Resume</h1>
+              </a>
+            </li>
+            <li>
+              <a href="#Portfolio">
+                <div><i class="fas fa-briefcase"></i></div>
+                <h1>Portfolio</h1>
+              </a>
+            </li>
+            <li>
+              <a href="#Blog">
+                <div><i class="fas fa-blog"></i></div>
+                <h1>Blog</h1>
+              </a>
+            </li>
+
+            <li>
+              <a href="#Contact">
+                <div><i class="far fa-envelope"></i></div>
+                <h1>Contact</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="background">
+        <div class="background-title">
+          <h1>Gülşən Zalova</h1>
+          <div class="wrapper">
+            <ul class="dynamic-txts">
+              <li><span> Welcome To Admin Panel</span></li>
             </ul>
           </div>
         </div>
-        <div class="background">
-          <div class="background-title">
-            <h1>Gülşən Zalova</h1>
-            <div class="wrapper">
-              <ul class="dynamic-txts">
-                <li><span> Welcome To Admin Panel</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- Container Section End -->
+      </div>
+    </section>
+  </div>
+  <!-- Container Section End -->
+
+  <!-- Page wrapper  -->
+  {% block content %}{% endblock %}
+  <!-- End wrapper  -->
+
   <div class="app">
     <!-- About Me Section Start -->
-    <section id="About-Me">
-        <div class="Header">
-            <div><h1>About Me</h1></div>
-        </div>
-        <form action="">
-            <div class="about-me-input">
-                <input type="file" class="form-control" name="img" placeholder="Add New İmage">
-            </div>
-            <div class="about-me-input">
-                <input type="text" class="form-control" name="title" placeholder="Add Title">
-            </div>
-            <div class="about-me-input">
-            <input type="submit" class="button" name="Add New Skils">
-            </div>
-        </form>
 
-    </section>
     <!-- About Me Section End -->
     <!-- Resume Section Start -->
-    <section id="Resume">
-        <div class="Top">
-            <div class="title">Resume</div>
+    <!-- <section id="Resume">
+      <div class="Top">
+        <div class="title">Resume</div>
+      </div>
+      <form action="">
+        <div class="resume-input">
+          <input type="date" class="form-control" placeholder="Tarix" />
         </div>
-        <form action="">
-            <div class="resume-input">
-                <input type="date" class="form-control" placeholder="Tarix">
-            </div>
-            <div class="resume-input">
-                <input type="text" class="form-control" placeholder="Universitet">
-            </div>
-            <div class="resume-input">
-                <input type="text" class="form-control" placeholder=" İxtisas">
-            </div>
-            <div class="resume-input">
-                <input type="submit" class="button" value="Add New Info">
-            </div>
-        </form>
-    </section>
+        <div class="resume-input">
+          <input type="text" class="form-control" placeholder="Universitet" />
+        </div>
+        <div class="resume-input">
+          <input type="text" class="form-control" placeholder=" İxtisas" />
+        </div>
+        <div class="resume-input">
+          <input type="submit" class="button" value="Add New Info" />
+        </div>
+      </form>
+      <div class="resume-table">
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>İd</th>
+                  <th>Tarix</th>
+                  <th>Universitet</th>
+                  <th>İxtisas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <!-- Resume Section End -->
     <!-- Portfolio Section Start -->
-    <section id="Portfolio">
-        <div class="Header">
-            <div><H1>Portfolio</H1></div>
+    <!-- <section id="Portfolio">
+      <div class="Header">
+        <div><h1>Portfolio</h1></div>
+      </div>
+      <form action="">
+        <div class="portfolio-input">
+          <input type="file" class="form-control" />
         </div>
-        <form action="">
-            <div class="portfolio-input">
-                <input type="file" class="form-control">
-            </div>
-            <div class="portfolio-input">
-                <input type="submit" class="button" value="Add New İmage" >
-            </div>
-        </form>
-    </section>
+        <div class="portfolio-input">
+          <input type="submit" class="button" value="Add New İmage" />
+        </div>
+      </form>
+      <div class="resume-table">
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>İd</th>
+                  <th>Şəkil</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <!-- Portfolio Section End -->
     <!-- Blog Section Start -->
-    <section id="Blog">
-        <div class="blog-title">
-            <div><H1>Blog</H1></div>
+    <!-- <section id="Blog">
+      <div class="blog-title">
+        <div><h1>Blog</h1></div>
+      </div>
+      <form action="">
+        <div class="blog-input">
+          <input type="file" class="form-control" placeholder="Add İmage" />
         </div>
-        <form action="">
-            <div class="blog-input">
-                <input type="file" class="form-control" placeholder="Add İmage">
-            </div>
-            <div class="blog-input">
-                <input type="text" class="form-control" placeholder="Add Title">
-            </div>
-            <div class="blog-input">
-                <input type="date" class="form-control" placeholder="Add Date">
-            </div>
-            <div class="blog-input">
-                <input type="submit" class="button" value="Add New Blog">
-            </div>
-        </form>
-    </section>
+        <div class="blog-input">
+          <input type="text" class="form-control" placeholder="Add Title" />
+        </div>
+        <div class="blog-input">
+          <input type="date" class="form-control" placeholder="Add Date" />
+        </div>
+        <div class="blog-input">
+          <input type="submit" class="button" value="Add New Blog" />
+        </div>
+      </form>
+      <div class="resume-table">
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>İd</th>
+                  <th>Şəkil</th>
+                  <th>Başlıq</th>
+                  <th>Tarix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <!-- Blog Section End -->
     <!-- Contact Section Start -->
-    <section id="Contact">
-        <div class="Contact-title">
-            <div><h1>Contact</h1></div>
+    <!-- <section id="Contact">
+      <div class="Contact-title">
+        <div><h1>Contact</h1></div>
+      </div>
+      <div class="contact-table">
+        <div class="row">
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ad Soyad</th>
+                  <th>Mail</th>
+                  <th>Mesaj</th>
+                  <th>Tarix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-trash"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Ad Soyad</th>
-                                <th>Mail</th>
-                                <th>Mesaj</th>
-                                <th>Tarix</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for mesaj in messages %}
-                            <tr>
-                                <td>{{mesaj["ad"]}}</td>
-                                <td>{{mesaj["email"]}}</td>
-                                <td>{{mesaj["mesaj"]}}</td>
-                                <td>{{mesaj["tarix"]}}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                    
-                </div>
-            </div>
-        </div>
-    
-    </section>
+      </div>
+    </section> -->
     <!-- Contact Section End -->
-  <link rel="stylesheet" href="app.js">
-  </body>
-    </html>
-    
+  </div>
+</body>
